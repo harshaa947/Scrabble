@@ -14,7 +14,7 @@
 	 width:40px;
  }
  #letterbox {
-	 border:1px solid blue;
+	 border:1px solid black;
 	 position:absolute;
 	 left:100px;
 	 top:400px;
@@ -46,7 +46,7 @@ position:absolute;
 	 position:absolute;
 	 left:125px;
 	 top:500px;
-	 border:1px solid blue;
+	 border:1px solid black;
  }
  #timepanel{
 	 position:absolute;
