@@ -1,0 +1,73 @@
+
+
+ <html>
+ <head>
+ <title>Play scrabble</title>
+ <link rel="stylesheet" href="style.css">
+ 
+ </head>
+ <body>
+ 
+ <p id="wordlist"></p>
+ <div id="gamecanvas">
+ 
+
+<table id="boardtable">
+
+  
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+   <tr> <td ><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+ </table>
+ </div>
+ <div id="letterbox">
+ <table id="lettertable"> 
+ <tr> <td>  <td>  <td>  <td>  <td>  <td>  <td>  
+ <
+ </table>
+ </div>
+ <div id="bonpanal">
+<button onclick="finish_turn();"> Submit word </button>
+<button onclick="returnstate();"> Return letters </button>
+</div>
+ <div id="alphabox" >
+ <form method="post">
+ <input type="text" name="getchar">
+ <br>
+<input type="submit" value="Submit"> 
+</form>
+</div>
+<div id ="checkword">
+
+<p> check word :
+<br><br>
+ <input id="word" type="text" name="getchar">
+ <br>
+<input id="blogin" type="button" name="Login" value="check" onclick="dosearch();" style="position:relative; left:50px;">
+ <p id="result" style="color:red"></p>
+
+</div>
+<div id="timepanel">
+<p> Time remaining : <span id="time" style="color:red;"> </span></p>
+</div>
+<div id="scorecard">
+<p id="player"> Gameplayer: <span id="score"> score </p>
+
+ 
+</div>
+<script src="dict.js" ></script>
+ <script src="script.js"></script>
+ </body>
+ </html>
